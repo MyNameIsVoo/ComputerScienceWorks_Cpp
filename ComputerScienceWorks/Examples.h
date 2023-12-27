@@ -93,6 +93,36 @@ void CalculateSummWithEpsilotAccurancyExample2()
 	cout << "\n\t\tСумма = " << summ << endl;
 }
 
+void CalculateSummMaxMinelementsOfMassive()
+{
+	cout << "\n\t\tСумма максимального и минимального элементов массива М[N]\n";
+
+	cout << "\n\t\tВведите N";
+	int N = GetInputIntValue(true);
+
+	clock_t Time = clock();
+
+	int *mas = new int[N], i, max_a, min_a;
+
+	for (i = 0; i < N; i++)
+	{
+		mas[i] = -50 + rand() % 101;
+		cout << mas[i] << "\t";
+		if (i == 0)
+			max_a = min_a = mas[i];
+		if (max_a < mas[i])
+			max_a = mas[i];
+		if (min_a > mas[i])
+			min_a = mas[i];
+	}
+
+	double EndTime = (clock() - (double)Time) / CLOCKS_PER_SEC;
+	cout << "\n\n\t\tВремя выполнения: " << EndTime << endl;
+
+	cout << "\n\t\tMax = " << max_a << "\n\t\Min = " << min_a << endl;
+	cout << "\n\t\y = " << (long)max_a + min_a << endl;
+}
+
 //
 // Helpers
 //

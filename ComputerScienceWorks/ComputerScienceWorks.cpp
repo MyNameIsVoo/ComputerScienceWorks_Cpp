@@ -15,6 +15,7 @@ int main()
 		cout << "\t\t1 - Вычислить сумму кубов всех четных чисел, лежащих в диапазоне от Y до X\n";
 		cout << "\t\t2 - Вычислить сумму с точностью e = 10^(-5) => [SUMM(cos(kx)/(k^2)) k=1]\n";
 		cout << "\t\t3 - Вычислить сумму с точностью e = 10^(-5) => [2/n*(1 + x/2 + x^2/(2*3) + ...x^n/(n*(n+1))))]\n";
+		cout << "\t\t4 - Вычислить сумму максимального и минимального элементов массива М[100]\n";
 
 		int index = GetInputIntValue(true);
 
@@ -31,6 +32,9 @@ int main()
 			break;
 		case 3:
 			CalculateSummWithEpsilotAccurancyExample2();
+			break;
+		case 4:
+			CalculateSummMaxMinelementsOfMassive();
 			break;
 		default:
 			cout << "\t\tНет такой задачи!\n";
