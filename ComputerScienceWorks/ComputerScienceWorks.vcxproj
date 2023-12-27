@@ -127,6 +127,7 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Examples.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>

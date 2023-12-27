@@ -9,4 +9,14 @@
 
 // Добавьте сюда заголовочные файлы для предварительной компиляции
 
+#include "iostream"
+#include <iomanip> /* setprecision */
+
+#include <math.h>
+#include<corecrt_math_defines.h>
+#define _USE_MATH_DEFINES
+#include <cmath>
+
+using namespace std;
+
 #endif //PCH_H
