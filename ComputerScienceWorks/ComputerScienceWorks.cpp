@@ -22,6 +22,7 @@ int main()
 		cout << "\t\t8 - Проверить, является ли строка представлением числа в шестнадцатеричной системе счисления\n";
 		cout << "\t\t9 - В массивах А(N) и В(MхL) найти максимумы, затем поменять их местами\n";
 		cout << "\t\t10 - Определить количество натуральных трехзначных чисел, сумма цифр которых равна заданному числу N\n";
+		cout << "\t\t11 - Дано натуральное число N. Составить программу для сравнения цифр старшего и младшего разрядов этого числа\n";
 
 		int index = GetInputIntValue(true);
 		
@@ -59,6 +60,9 @@ int main()
 			break;
 		case 10:
 			DetermineNumberNaturalThreeDigitNumbers();
+			break;
+		case 11:
+			ComparisonOfDigitsOfTheHighestandLowestDigits();
 			break;
 		default:
 			cout << "\t\tНет такой задачи!\n";

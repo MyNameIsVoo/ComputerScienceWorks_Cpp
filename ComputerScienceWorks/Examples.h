@@ -312,6 +312,30 @@ void DetermineNumberNaturalThreeDigitNumbers()
 	cout << "\n\n\t\tВремя выполнения: " << EndTime << endl;
 }
 
+void ComparisonOfDigitsOfTheHighestandLowestDigits()
+{
+	cout << "\t\tДано натуральное число N. Составить программу для сравнения цифр старшего и младшего разрядов этого числа\n";
+
+	cout << "\n\t\tВведите число N: ";
+	int N = GetInputIntValue(true);
+
+	clock_t Time = clock();
+
+	int x = N % 10;
+	while (N >= 10)
+		N /= 10;
+
+	if (x > N) 
+		cout << "\n\t\tM > C\n";
+	else if (x < N) 
+		cout << "\n\t\tM < C\n";
+	else 
+		cout << "\n\t\tM = C\n";
+
+	double EndTime = (clock() - (double)Time) / CLOCKS_PER_SEC;
+	cout << "\n\n\t\tВремя выполнения: " << EndTime << endl;
+}
+
 //
 // Helpers
 //
